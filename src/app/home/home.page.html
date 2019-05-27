@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title align="center">
+      Inventaris Koperasi
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>  
+<ion-searchbar></ion-searchbar>
+<ion-card *ngFor="let item of items" (click)="detailItem()">
+  <ion-card-header>
+    <ion-card-title>{{item.nama_barang}}</ion-card-title>
+  </ion-card-header>
+
+
+  <ion-card-content>
+   <p>Jumlah : {{item.qty}}</p>
+   <p>Harga : Rp. {{item.harga}}</p>
+  </ion-card-content>
+</ion-card>
+</ion-content>
+  <ion-card>
+    <ion-button expand="block" (click)="tambahData()" color="primary">Tambah data</ion-button>  
+  </ion-card>
+
+

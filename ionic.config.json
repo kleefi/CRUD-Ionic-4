@@ -1,0 +1,7 @@
+{
+  "name": "testApi",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

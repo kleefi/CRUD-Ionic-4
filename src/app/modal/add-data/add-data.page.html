@@ -1,0 +1,32 @@
+<ion-header>
+
+<ion-toolbar color="dark">
+    <ion-title>Add data</ion-title>
+    <ion-button (click)="closePage()" slot="end" color="light" size="small">X</ion-button>
+</ion-toolbar>
+
+</ion-header>
+
+
+<ion-content>
+<ion-card>
+
+	<ion-card-content>
+		<ion-item>
+		  <ion-label position="stacked">Nama Barang</ion-label>
+		  <ion-input type="text"></ion-input>
+		</ion-item>
+		<ion-item>
+		  <ion-label position="stacked">Quantity</ion-label>
+		  <ion-input type="number"></ion-input>
+		</ion-item>
+		<ion-item>
+		  <ion-label position="stacked">Harga</ion-label>
+		  <ion-input type="number"></ion-input>
+		</ion-item>
+		
+		<ion-button expand="block" (click)="simpanData()" color="primary">Simpan</ion-button>	
+		
+	</ion-card-content>
+</ion-card>
+</ion-content>
